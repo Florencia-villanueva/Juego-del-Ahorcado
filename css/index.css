@@ -1,0 +1,77 @@
+buttons {
+    text-align: center;
+    color: #121711;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 3rem;
+}
+
+.logo {
+    width: 45px;
+    height: 33px;
+    transition: all 500ms;
+    margin-left: 95px;
+}
+
+.logo:hover {
+    transform: rotateY(180deg);
+}
+
+
+/*TITTLE*/
+
+.T,
+.contenedor-logo {
+    font-size: 69px;
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    color: rgb(209, 12, 12);
+}
+
+.d {
+    font-size: 20px;
+    color: azure;
+    font-family: 'Permanent Marker', cursive;
+    padding: auto;
+}
+
+@keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+main .buttons {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 99%;
+    margin: auto;
+}
+
+main .buttons>* {
+    margin-bottom: 2rem;
+    margin-inline: auto;
+}
+
+main .buttons>*:last-child {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    width: 17rem;
+    height: 5rem;
+}

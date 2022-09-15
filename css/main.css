@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Start https://www.cursors-4u.com */
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol333.ani), url(https://cur.cursors-4u.net/holidays/hol-4/hol333.png), auto !important;
+    /* End https://www.cursors-4u.com */
+}
+
+body {
+    height: 95vh;
+    display: flex;
+    flex-flow: column;
+    background-image: url("/img/Principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(14, 13, 13);
+}
+
+
+/* BUTTONS */
+
+a {
+    width: 1rem;
+    padding: 1.5rem;
+    border: 0.0625rem solid white;
+    height: 4.5995rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    transition: transform ease 0.3s;
+}
+
+a:hover {
+    transform: scale(1.03);
+}
+
+a:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    font-size: 18px;
+    font-family: Arial;
+    width: 255px;
+    height: 73px;
+    border-width: 1px;
+    color: #000000;
+    border-color: #d83526;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #f29c93;
+    text-shadow: inset 0px 1px 0px #b23e35;
+    background: linear-gradient(#fe1a00, #ce0100);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(#ce0100, #fe1a00);
+}
+
+.btn-secondary {
+    font-size: 15px;
+    font-family: Arial;
+    width: 215px;
+    height: 63px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: #ffffff;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: inset 0px 1px 0px 0px #f81c03;
+    text-shadow: inset 0px 1px 0px #ff1201;
+    background: linear-gradient(#030303, #141212);
+}
+
+
+/* LOGO */
+
+header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0.1rem;
+    font-size: 3rem;
+}
+
+
+/* INSTRUCTIONS */
+
+.instructions p {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 10%;
+    text-shadow: 0.0625rem 0 0 #323232;
+}
+
+
+/* COPYRIGHT */
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-text {
+    font-size: 12px;
+    margin: auto;
+    padding: .2rem;
+    color: white;
+}
+
+
+/* TABLET */
+
+@media (min-width: 600px) {}
+
+
+/* DESKTOP */
+
+@media (min-width: 1200px) {}

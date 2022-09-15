@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ahorcado</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/ahorcado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <section class="game-over">
+        <div class="you-loss">
+            <strong class="loss-text">Perdiste, ha llegado tu hora!!</strong>
+            <a href="/html/ahorcado.html" class="btn-primary">Intentar de nuevo</a>
+            <a href="/html/index.html" class="btn-secondary">Rendirse</a>
+        </div>
+        <div class="you-win">
+            <p class="win-text">Felicidades lo lograste, te has salvado!!</p>
+            <a href="/html/ahorcado.html" class="btn-primary">Seguir jugando</a>
+            <a href="/html/index.html" class="btn-secondary">Volver al menú</a>
+        </div>
+    </section>
+    <header>
+        <img class="logo" src="/img/Alura.logo.png" />
+
+    </header>
+    <main>
+        <div id="contenedor-canvas">
+            <canvas id="ahorcado" width="250" height="275">
+            </canvas>
+        </div>
+        <section class="words">
+            <p class="secret-word"></p>
+
+            <div class="bad-letters">
+                <p class="bad-letter">!</p>
+            </div>
+            <input class="input-word" type="text" maxlength="1" onkeypress="return /[A-Z]/i.test(event.key)">
+
+        </section>
+        <section class="buttons">
+            <a href="/html/ahorcado.html" class="btn-primary">Nuevo juego</a>
+            <a href="/html/index.html" class="btn-secondary">Rendirse</a>
+        </section>
+        <div id="tw">
+            <i class='fa-solid fa-warning'></i>
+            </span>
+            <p class="e">Ingrese una letra y presione enter.</p>
+        </div>
+    </main>
+    <script src="/Js/appAhorcado.js"></script>
+</body>
+
+</html>

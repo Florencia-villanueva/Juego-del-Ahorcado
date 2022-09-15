@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ahorcado</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/agregarpalabras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="logo" src="/img/Alura.logo.png" alt="logotipodealura">
+
+        </header>
+        <form action="/html/ahorcado.html" method="GET">
+            <input type="password" onkeypress="return /[A-Z]/i.test(event.key)" name="newSecretWord" maxlength="8">
+            <button class="btn-primary" type="submit" value="Submit">Agregar Palabra</button>
+            <a href="/html/index.html" class="btn-secondary">Volver</a>
+        </form>
+    </main>
+    <footer>
+        <p class="copyright-text"> © Desarrollado por<b> Florencia Villanueva 2022</b></p>
+    </footer>
+    <script src="/Js/appAhorcado.js"></script>
+
+</body>
+
+</html>

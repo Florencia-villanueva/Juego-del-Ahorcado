@@ -1,0 +1,212 @@
+body {
+    background-image: url("/img/Juego.jpg");
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    height: 91%;
+    margin: auto;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 45px;
+    height: 33px;
+    margin-left: 5px;
+    transition: all 500ms;
+    font-size: 3rem;
+}
+
+.logo:hover {
+    transform: rotateY(180deg);
+}
+
+canvas {
+    margin-left: 92px;
+    background: rgba(255, 102, 102, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 86, 86, 0.3);
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    padding: 40px;
+    margin-inline: 29px;
+}
+
+#tw {
+    display: inline-flex;
+}
+
+.e {
+    font-size: 13px;
+    color: azure;
+    margin-top: auto;
+}
+
+.words {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.words .secret-word {
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 19px;
+    letter-spacing: 0.8rem;
+}
+
+.input-word {
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 105px;
+    height: 50px;
+    margin: center;
+    padding-left: 37px;
+}
+
+.game-over {
+    opacity: 0.9;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.you-win {
+    background-image: url("/img/Gano.png");
+}
+
+.you-loss {
+    background-image: url("/img/Perdio.png");
+}
+
+.game-over .you-win,
+.game-over .you-loss {
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.game-over .you-win>*,
+.game-over .you-loss>* {
+    margin-bottom: 1rem;
+    margin-left: 10px;
+}
+
+.game-over .you-loss .loss-text,
+.game-over .you-win .win-text {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.game-over .you-loss .loss-text {
+    font-size: 37px;
+    color: red;
+    text-shadow: rgb(0, 0, 0) 3px 3px;
+}
+
+.game-over .you-win .win-text {
+    color: green;
+}
+
+.bad-letters {
+    display: flex;
+    flex-flow: row;
+}
+
+.bad-letters .bad-letter {
+    font-size: 20px;
+    background: #db2929;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    padding: 22px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 21px;
+    animation: letteranim 0.3s ease;
+}
+
+.bad-letters .bad-letter:first-child {
+    visibility: hidden;
+}
+
+.letter-anim {
+    animation: letteranim 0.3s ease;
+}
+
+.shake {
+    animation: shake 1s ease;
+}
+
+@keyframes letteranim {
+    50% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+        background-color: #d1240d;
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1200px) {
+    main .buttons {
+        flex-flow: row;
+    }
+    main .buttons>a:first-child {
+        margin-right: 1rem;
+    }
+}
